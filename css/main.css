@@ -1,0 +1,225 @@
+* {
+	color: black;
+	font-family: Roboto Slab;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 18px;
+}
+
+.text-link {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 2px;
+  transition: all .2s linear;
+  text-decoration: none;
+}
+
+.text-link:before {
+	content: '';
+	display: block;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	width: 100%;
+	transition: width 0s ease;
+}
+
+.text-link:after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 1px;
+	width: 100%;
+	background: white;
+	transition: width .5s ease;
+}
+
+.text-link:hover:before {
+	width: 0%;
+	background: white;
+	transition: width .5s ease;
+}
+
+.text-link:hover:after {
+	width: 0%;
+	background: transparent;
+	transition: width 0s ease;
+}
+
+.hero .text-link {
+	padding: 2px 5px;
+	margin-bottom: 5px;
+}
+
+h1, h2 {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: lighter;
+}
+
+h1 {
+	font-size: 2em;
+	text-align: center;
+	margin: 10px;
+	line-height: 1em;
+}
+
+h1 img {
+	height: 1em;
+}
+
+h2 {
+	font-size: 1.25em;
+	margin: 5px 0;
+	line-height: 2em;
+}
+
+.hero h1 {
+	margin: 10px 0;
+	font-size: 3.5em;
+	font-weight: normal;
+	text-align: left;
+}
+
+h4 {
+	font-weight: normal;
+	margin: 5px 0;
+}
+
+.section {
+	display: flex;
+}
+
+.full-width, .illo-col, .text-col {
+	padding: 50px;
+}
+
+.full-width {
+	flex-direction: column;
+}
+
+.illo-col {
+	flex: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.illo-content {
+	padding: 10px 20px;
+}
+
+.text-col {
+	flex: 5;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+.hero {
+	background-color: #54496A;
+	justify-content: center;
+}
+
+.code {
+	background-color: #9E053D;
+}
+
+.talks {
+	background-color: #AE3F3D;
+}
+
+.design {
+	background-color: #bf5401
+}
+
+.contact a {
+	font-weight: 400;
+}
+
+.contact {
+	background-color: rgb(209, 94, 0);
+}
+
+.illo {
+	width: 200px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+.talk-details {
+	font-weight: 300;
+	margin: 10px 0;
+	font-size: 0.9em;
+}
+
+.talks ul {
+	margin: 0px 0px 30px;
+}
+
+.whisper {
+	font-weight: lighter;
+	font-style: italic;
+	margin: 5px 0;
+}
+
+.text-content {
+	max-width: 600px;
+}
+
+.icon-link {
+	text-decoration: none;
+	height: 30px;
+	display: inline-block;
+	margin: 15px 0;
+	margin-right: 15px;
+}
+
+.icon-link img {
+	height: 25px;
+	max-height: 100%;
+}
+
+b, h4 {
+	font-weight: normal;
+}
+
+@media (max-width: 750px){
+
+	h2, p, .talk-details {
+		font-weight: 400;
+	}
+	body {
+		font-size: 16px;
+	}
+	.section {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.illo-col, .text-col {
+		padding: 0px;
+	}
+
+	.illo-col {
+		padding-top: 0px;
+	}
+
+	.text-col {
+		padding-top: 0;
+	}
+
+	.hero h2 {
+		font-size: 1em;
+	}
+
+	img {
+		max-width: 80%;
+	}
+
+}
