@@ -152,6 +152,14 @@ h4 {
 	display: block;
 }
 
+.illo {
+	width: 400px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+
 .talk-details {
 	font-weight: 300;
 	margin: 10px 0;
