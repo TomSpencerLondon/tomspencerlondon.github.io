@@ -121,20 +121,20 @@ h4 {
 }
 
 .hero {
-	background-color: #54496A;
+	background-color: white;
 	justify-content: center;
 }
 
 .code {
-	background-color: #9E053D;
+	background-color: white;
 }
 
 .talks {
-	background-color: #AE3F3D;
+	background-color: white;
 }
 
 .design {
-	background-color: #bf5401
+	background-color: white;
 }
 
 .contact a {
@@ -142,7 +142,7 @@ h4 {
 }
 
 .contact {
-	background-color: rgb(209, 94, 0);
+	background-color: white;
 }
 
 .illo {
